@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sobre</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    /* ======= Fixed style ======= */
+    /* ======= Header ======= */
+    * {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      text-decoration: none;
+      font-family: roboto;
+      color: white;
+    }
+
+    h1 {
+      color: black;
+    }
+
+    header {
+      background-color: white;
+    }
+
+    header div {
+      background-color: #2e2b33;
+      display: flex;
+    }
+
+    .title {
+      margin: auto;
+      padding-top: 30px;
+      padding-bottom: 20px;
+    }
+
+    .menu a {
+      padding-right: 25px;
+      border-right: 1px solid white;
+      color: inherit;
+      text-decoration: underline rgba(255, 255, 255, 0);
+      transition: text-decoration-color 0.4s;
+    }
+
+    .menu .tira {
+      border: none;
+    }
+
+    .menu td {
+      width: 200px;
+    }
+
+    .menu {
+      display: flex;
+      gap: 25px;
+
+      font-size: 20px;
+      margin: auto;
+      padding: 5px;
+    }
+
+    header a:hover {
+      text-decoration: underline;
+    }
+
+    /* ======= Main ======= */
+    body {
+      background-color: #5c21db;
+    }
+
+    /* ======= Footer ======= */
+    footer {
+      display: flex;
+      justify-content: center;
+
+      margin-bottom: 15px;
+      padding-top: 50px;
+
+      bottom: 0;
+      width: 100%;
+      height: 65px;
+    }
+
+    .rodape {
+      border-top: 1px solid;
+      padding-top: 5px;
+    }
+
+    /* ======= Normal style ======= */
+
+    header img {
+      border-radius: 50%;
+      border: 4px solid #2e2b33;
+    }
+
+    .card {
+      background-color: #2A2634;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      max-width: 580px;  
+      padding: 30px;
+      border-bottom: 3px solid yellow;
+
+    }
+
+    .card p {
+      margin-top: 5px;
+      margin-bottom: 24px;
+    }
+
+    .card img {
+      width: 90px;
+      height: 130px;
+      border-radius: 8px;
+      transition: transform 0.2s;
+    }
+
+  .card img:hover {
+  transform: scale(1.1);  
+    }
+
+
+    .fatos {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      width: fit-content;
+      height: fit-content;
+      margin-left: 30px;
+      padding: 30px;
+
+      background-color: #2A2634;
+
+      border-bottom: 3px solid yellow;
+      border-radius: 6px;
+    }
+
+    main {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    a {
+      color: black;
+    }
+    /* ======= Animations ======= */  
+    .card {
+      opacity: 0;
+      animation: appear 2s forwards;
+    }
+    .number1 {
+      animation-delay: 1s
+    }
+
+    .number2 {
+      animation-delay: 2s
+    }
+
+    @keyframes appear {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+
+     100% {
+      opacity: 1;
+    }
+    }
+
+    .fatos {
+      opacity: 0;
+      animation: appear 5s forwards;
+
+    }
+
+    @keyframes appear {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+    } 
+
+  </style>
+
+  <body>
+    <header>
+      <table class="title">
+        <tr>
+          <td>
+            <img src="./imagens/avatar.png" width="200px" height="200px" />
+          </td>
+          <td>
+            <h1>
+              Ricardo <br />
+              Gonçalves
+            </h1>
+          </td>
+        </tr>
+      </table>
+      <div>
+        <div class="menu">
+          <tr>
+            <a href="./index.html">Home</a>
+            <a href="sobre.html">Sobre mim</a>
+            <a href="projetos.html">Projetos</a>
+            <a class="tira" href="contato.html">Contato</a>
+          </tr>
+        </div>
+      </div>
+    </header>
+    <main>
+      <table>
+        <div class="fatos number0">
+          <h2>Alguns fatos sobre mim:</h2>
+          <p align="justify">
+            -Meu nome completo é Ricardo Gonçalves Ferreira Junior.
+          </p>
+          <p align="justify">-Tenho 25 anos.</p>
+          <p align="justify">-Sou Marceneiro junto com meu pai. </p>
+          <p align="justify">-Estudo programação por conta própria.</p>
+          <p align="justify">-Tenho uma namorada linda chamada Thainá.</p>
+          <p align="justify">-Fã do terror.</p>
+          <p align="justify">-Escritor amador.</p>
+          <p align="justify">-Amante de jogos.</p>
+        </div>
+      </table>
+      <section>
+      <div class="card number1">
+        <h2>Terror e eu</h2>
+        <p>Obras de ficção do terror que eu amo.</p>
+        <ul>
+          <li>
+            <img src="./imagens/Terror/scream.jpg" alt="" />
+          </li>
+          <li>
+            <img src="./imagens/Terror/halloween.jpg" alt="" />
+          </li>
+          <li>
+            <img src="./imagens/Terror/hereditario.jpg" alt="" />
+          </li>
+          <li>
+            <img src="./imagens/Terror/tomie.jpg" alt="" />
+          </li>
+          <li>
+            <img src="./imagens/Terror/mimi.jpg" alt="" />
+          </li>
+          <li>
+            <img src="./imagens/Terror/Castlevania.jpg" alt="" />
+          </li>
+        </ul>
+      </div>
+        <section>
+          <div class="card number2">
+            <h2>Meus jogos</h2>
+            <p>Jogos que marcaram minha vida!</p>
+            <ul>
+              <li>
+                <img src="./imagens/Jogos/bloodborne.jpg" alt="">
+              </li>
+              <li>
+                <img src="./imagens/Jogos/dark-souls.jpg" alt="">
+              </li>
+              <li>
+                <img src="./imagens/Jogos/Elden.jpg" alt="">
+              </li>
+              <li>
+                <img src="./imagens/Jogos/castlevania.jpg" alt="">
+              </li>
+              <li>
+                <img src="./imagens/Jogos/Skyrim.jpg" alt="">
+              </li>
+              <li>
+                <img src="./imagens/Jogos/Yugioh.jpg" alt="">
+              </li>
+              <li>
+                <img src="./imagens/Jogos/vava.jpg" alt="">
+              </li>
+              <li>
+                <img src="./imagens/Jogos/gta.jpg" alt="">
+              </li>
+              <li>
+                <img src="./imagens/Jogos/gc.jpg" alt="">
+              </li>
+            </ul>
+          </div>
+        </section>
+    </main>
+
+    <footer>
+      <table>
+        <tr>
+          <td class="rodape">
+            Desenvolvido por Ricardo Gonçalves no Curso de Programador Front-End
+            com o <a href=""><span>Prof. Anthony Freitas</span></a
+            >.
+          </td>
+        </tr>
+        <tr>
+          <td align="center">
+            Todos os direitos reservados - Senai Maracanã - 2023©
+          </td>
+        </tr>
+      </table>
+    </footer>
+  </body>
+</html>

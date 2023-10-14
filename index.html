@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    /* ======= Fixed style ======= */
+    /* ======= Header ======= */
+    * {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      text-decoration: none;
+      font-family: roboto;
+      color: white;
+    }
+
+    h1 {
+      color: black;
+    }
+
+    header {
+      background-color: white;
+    }
+
+    header div {
+      background-color: #2e2b33;
+      display: flex;
+    }
+
+    .title {
+      margin: auto;
+      padding-top: 30px;
+      padding-bottom: 20px;
+    }
+
+    .menu a {
+      padding-right: 25px;
+      border-right: 1px solid white;
+      color: inherit;
+      text-decoration: underline rgba(255, 255, 255, 0);
+      transition: text-decoration-color 0.4s;
+    }
+
+    .menu .tira {
+      border: none;
+    }
+
+    .menu td {
+      width: 200px;
+    }
+
+    .menu {
+      display: flex;
+      gap: 25px;
+
+      font-size: 20px;
+      margin: auto;
+      padding: 5px;
+    }
+
+    /* ======= Main ======= */
+    body {
+      background-color: #5c21db;
+    }
+
+    /* ======= Footer ======= */
+    footer {
+      display: flex;
+      justify-content: center;
+
+      margin-bottom: 15px;
+      padding-top: 50px;
+
+      bottom: 0;
+      position: absolute;
+      width: 100%;
+      height: 65px;
+    }
+
+    .rodape {
+      border-top: 1px solid;
+      padding-top: 5px;
+    }
+
+    /* ======= Animations ======= */
+
+    header a:hover {
+      text-decoration: underline;
+    }
+
+    span:hover {
+      color: black;
+    }
+    span {
+      transition: 0.3s;
+    }
+
+    /* ======= Normal style ======= */
+    /* ======= body ======= */
+    .container {
+      position: relative;
+      min-height: 100vh;
+    }
+
+    .wrap {
+      padding-bottom: 65px;
+    }
+
+    main {
+      display: flex;
+      justify-content: center;
+      width: 85vw;
+    }
+
+    main div img {
+      width: 600px;
+      height: 300px;
+    }
+
+    .text {
+      width: 700px;
+    }
+
+    main table tr td {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    aside {
+      display: flex;
+      justify-content: center;
+      width: 15vw;
+    }
+
+    aside div {
+      max-width: 200px;
+    }
+
+    section {
+      padding-top: 30px;
+      display: flex;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 30px;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      background-image: url('imagens/frame.png');
+      background-size: cover;
+      background-color: #7b95db;
+
+      border-right: 4px solid rgba(0, 0, 0, 0.7);
+      font-weight: 700;
+
+      padding: 50px 20px;
+
+      border-radius: 5px;
+    }
+
+    ul li {
+      display: flex;
+      transition: transform 0.3s;
+    }
+
+    ul li img {
+      width: 20px;
+      margin-right: 8px;
+    }
+
+    a {
+      color: black;
+    }
+    ul li:hover {
+      transform: scale(1.2);
+    }
+  </style>
+
+  <body>
+    <div class="container">
+      <div class="wrap">
+        <header>
+          <table class="title">
+            <tr>
+              <td>
+                <img src="./imagens/logo.png" width="200px" />
+              </td>
+              <td>
+                <h1>
+                  FRONT-END ESSENCIAL <br />
+                  SENAI
+                </h1>
+              </td>
+            </tr>
+          </table>
+          <div>
+            <div class="menu">
+              <tr>
+                <a href="./index.html">Home</a>
+                <a href="sobre.html">Sobre mim</a>
+                <a href="projetos.html">Projetos</a>
+                <a class="tira" href="contato.html">Contato</a>
+              </tr>
+            </div>
+          </div>
+        </header>
+        <section>
+          <main>
+            <div class="text">
+              <table>
+                <tr>
+                  <td>
+                    <p align="justify">
+                      &emsp; A área de desenvolvimento web front-end é a ponte
+                      que une os mundos do design e da programação. O
+                      profissional desenvolvedor front-end é o responsável por
+                      colocar em prática, através de códigos, o design de um
+                      site ou interface.
+                    </p>
+                    <p align="justify">
+                      &emsp; Enquanto o web design projeta o visual de um site,
+                      o desenvolvimento front-end implementa esse design através
+                      de códigos, como HTML, CSS e JavaScript. Ou seja, é o
+                      front-end que coloca “para funcionar” toda a parte visual
+                      de uma interface, como a página de um site ou de um
+                      aplicativo.
+                    </p>
+                    <p align="justify">
+                      &emsp; O front-end também deve ser capaz de se “comunicar”
+                      com a linguagem utilizada no back-end, que é a parte
+                      estrutural de sites e plataformas. Dessa forma, o visual
+                      de uma interface conseguirá ter suas funções
+                      correspondidas, como quando clicamos em um botão de
+                      “enviar mensagem” e a mensagem realmente é enviada.
+                    </p>
+                    <img src="./imagens/main-image.png" alt="" />
+
+                    <p align="justify">
+                      &emsp; Hoje, a computação está envolvida em quase todos os
+                      aspectos de nossas vidas, de comunicações, mídia social,
+                      serviços bancários, informações, segurança e compras. Os
+                      computadores em rede são capazes de controlar termostatos
+                      dos nossos lares, iluminação, nossos carros e muito mais
+                      vem por ai.
+                    </p>
+                    <p align="justify">
+                      &emsp; As habilidades que vêm com programação de
+                      computador ajuda as pessoas a desenvolver novas formas de
+                      pensar e técnicas de resolução de problemas que podem ter
+                      grandes repercussões em outras áreas.
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </main>
+          <aside>
+            <div>
+              <ul>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+                    ><img src="./imagens/html.png" alt="" />HTML</a
+                  >
+                </li>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+                    ><img src="./imagens/css.png" alt="" />CSS</a
+                  >
+                </li>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                    ><img src="./imagens/js.png" alt="" />JavaScript</a
+                  >
+                </li>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://legacy.reactjs.org/docs/getting-started.html"
+                    ><img src="./imagens/react.png" alt="" />REACT</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </aside>
+        </section>
+      </div>
+      <footer>
+        <table>
+          <tr>
+            <td class="rodape">
+              Desenvolvido por Ricardo Gonçalves no Curso de Programador
+              Front-End com o <a href=""><span>Prof. Anthony Freitas</span></a
+              >.
+            </td>
+          </tr>
+          <tr>
+            <td align="center">
+              Todos os direitos reservados - Senai Maracanã - 2023©
+            </td>
+          </tr>
+        </table>
+      </footer>
+    </div>
+  </body>
+</html>
