@@ -68,10 +68,6 @@
       padding: 5px;
     }
 
-    header a:hover {
-      text-decoration: underline;
-    }
-
     /* ======= Main ======= */
     body {
       background-color: #5c21db;
@@ -95,6 +91,20 @@
       padding-top: 5px;
     }
 
+    /* ======= Animations ======= */
+
+    header a:hover {
+      text-decoration: underline;
+    }
+
+    span:hover {
+      color: black;
+    }
+    span {
+      transition: 0.3s;
+    }
+
+
     /* ======= Normal style ======= */
 
     header img {
@@ -109,7 +119,6 @@
       max-width: 580px;  
       padding: 30px;
       border-bottom: 3px solid yellow;
-
     }
 
     .card p {
@@ -124,9 +133,7 @@
       transition: transform 0.2s;
     }
 
-  .card img:hover {
-  transform: scale(1.1);  
-    }
+
 
 
     .fatos {
@@ -204,7 +211,11 @@
     100% {
       opacity: 1;
     }
-    } 
+    }
+
+    .card img:hover {
+  transform: scale(1.1);  
+    }
 
   </style>
 

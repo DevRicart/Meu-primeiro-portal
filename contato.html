@@ -68,10 +68,6 @@
       padding: 5px;
     }
 
-    header a:hover {
-      text-decoration: underline;
-    }
-
 		/* ======= Main ======= */
 		body {
 			background-color: #5c21db;
@@ -96,6 +92,20 @@
       padding-top: 5px;
     }
 
+	    /* ======= Animations ======= */
+
+		header a:hover {
+      text-decoration: underline;
+    }
+
+    span:hover {
+      color: black;
+    }
+    span {
+      transition: 0.3s;
+    }
+
+
 	
 	  /* ======= Normal style ======= */
 
@@ -106,12 +116,25 @@
 
 			margin-top: 50px;
 			gap: 20px;
+		}
 
+		.content {
+			display: flex;
+			flex-direction: column;
+			background-color: #2A2634;
+     		border-radius: 5px;
+
+    	    padding: 10px 100px 30px 100px;
+		}
+
+		h2 {
+			margin-bottom: 30px;
 		}
 
 		table td img {
 			width: 200px;
 			border-radius: 100px;
+			transition: transform 0.3s;
 		}
 
 		td {
@@ -141,6 +164,13 @@
 	a {
 		color: black;
 	}
+
+	/* ======= Animations ======= */ 
+
+	section td img:hover {
+  transform: scale(1.1);  
+    }
+
 </style>
 <body>
 	<header>
@@ -169,6 +199,7 @@
 	</header>
 	<main>
 		<section>
+			<div class="content">
 			<h2>Entre em contato comigo!</h2>
 			<div>
 			<table>
@@ -188,7 +219,8 @@
 					<td><a href=""><img src="./imagens/social" alt=""></a></td>
 				</tr>
 			</table>
-		</div>
+			</div>
+			</div>
 		</section>
 
 	</main>
