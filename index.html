@@ -28,6 +28,7 @@
       color: black;
     }
 
+
     header {
       background-color: white;
     }
@@ -116,6 +117,20 @@
       padding-bottom: 65px;
     }
 
+    body .text h3 {
+      text-align: left;
+      margin-top: 20px;
+      margin-bottom: 5px;
+    }
+
+    main ul li {
+      margin-top: 5px;
+    }
+
+    main h2 {
+      margin: 10px 0px 10px 0px;
+    }
+
     main {
       display: flex;
       justify-content: center;
@@ -157,7 +172,7 @@
       line-height: 30px;
     }
 
-    ul {
+    ul.lateral {
       display: flex;
       flex-direction: column;
       gap: 10px;
@@ -187,7 +202,7 @@
     a {
       color: black;
     }
-    ul li:hover {
+    ul.lateral li:hover {
       transform: scale(1.2);
     }
   </style>
@@ -226,6 +241,7 @@
               <table>
                 <tr>
                   <td>
+                    <h2>O que é o front-end?</h2>
                     <p align="justify">
                       &emsp; A área de desenvolvimento web front-end é a ponte
                       que une os mundos do design e da programação. O
@@ -250,7 +266,7 @@
                       “enviar mensagem” e a mensagem realmente é enviada.
                     </p>
                     <img src="./imagens/main-image.png" alt="" />
-
+                    <h2>Por que estudar front-end?</h2>
                     <p align="justify">
                       &emsp; Hoje, a computação está envolvida em quase todos os
                       aspectos de nossas vidas, de comunicações, mídia social,
@@ -263,16 +279,35 @@
                       &emsp; As habilidades que vêm com programação de
                       computador ajuda as pessoas a desenvolver novas formas de
                       pensar e técnicas de resolução de problemas que podem ter
-                      grandes repercussões em outras áreas.
-                    </p>
+                      grandes repercussões em outras áreas.</p>
+                      <h2>Sobre o curso</h2>
+                      <p align="justify">O curso visa qualificar o participante como profissional 
+                        da área, com competências para o desenvolvimento de interface 
+                        web client-side, na qual o usuário vai interagir, o chamado 
+                        Front-End. O profissional dessa área atua fundamentalmente 
+                        em empresas de TI de forma geral e de desenvolvimento de 
+                        tecnologias de softwares, sites, startups e agências de 
+                        comunicação.</p>
+
                   </td>
                 </tr>
               </table>
+              <h3>Requisitos:</h3>
+              <ul><li>-Idade mínima: 16 anos.</li>
+              <li>-Escolaridade: Fundamental completo.</li>
+              <li>-Carga horária: 180 horas.</li></ul>
+              <h3>Conteúdo:</h3>
+              <ul><li>-Iniciação à Tecnologia da Informação</li>
+              <li>-Lógica de Programação</li>
+              <li>-FrontEnd Essencial</li>
+              <li>-Desenvolvimento Web</li>
+              <li>-Integração de Competências Profissionais.</li>
+              </ul>
             </div>
           </main>
           <aside>
             <div>
-              <ul>
+              <ul class="lateral">
                 <li>
                   <a
                     target="_blank"
@@ -311,7 +346,7 @@
           <tr>
             <td class="rodape">
               Desenvolvido por Ricardo Gonçalves no Curso de Programador
-              Front-End com o <a href=""><span>Prof. Anthony Freitas</span></a
+              Front-End com o <a href="https://sammyfreitas.github.io/portfolioSite/" target="_blank"><span>Prof. Anthony Freitas</span></a
               >.
             </td>
           </tr>
