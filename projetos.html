@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Projetos</title>
-	<link rel="preconnect" href="https://fonts.googleapis.com" />
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link
-		href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-		rel="stylesheet"
-	/>
-</head>
-<style>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projetos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
     /* ======= Fixed style ======= */
     /* ======= Header ======= */
     * {
@@ -34,7 +33,7 @@
     }
 
     header div {
-      background-color: #2E2B33;
+      background-color: #2e2b33;
       display: flex;
     }
 
@@ -68,11 +67,11 @@
       padding: 5px;
     }
 
-	  /* ======= Main ======= */
+    /* ======= Main ======= */
 
-		body {
-			background-color: #5c21db;
-		}
+    body {
+      background-color: #5c21db;
+    }
 
     /* ======= Footer ======= */
     footer {
@@ -82,18 +81,17 @@
       margin-bottom: 15px;
       padding-top: 50px;
 
-
       width: 100%;
       height: 65px;
     }
 
     .rodape {
-      border-top: 1px solid ;
+      border-top: 1px solid;
       padding-top: 5px;
     }
-	    /* ======= Animations ======= */
+    /* ======= Animations ======= */
 
-		header a:hover {
+    header a:hover {
       text-decoration: underline;
     }
 
@@ -104,234 +102,290 @@
       transition: 0.3s;
     }
 
+    /* ======= Normal style ======= */
 
-		    /* ======= Normal style ======= */
+    main {
+      display: flex;
+      justify-content: center;
+      width: 85vw;
+    }
+    div table {
+      width: 800px;
+    }
 
-	main {
-		display: flex;
-		justify-content: center;
-		width: 85vw;
-	}
-	div table {
-		width: 800px;
-	}
+    aside {
+      display: flex;
+      justify-content: center;
+    }
 
-	aside {
-		display: flex;
-		justify-content: center;
-	}
+    section {
+      margin-top: 30px;
+      display: flex;
+    }
 
-	section {
-		margin-top: 30px;
-		display: flex;
-	}
-	
-	main table {
-		margin-left: 20px;
-		border-collapse: collapse;
-		border: 1px solid black;
-	}
+    main table {
+      margin-left: 20px;
+      border-collapse: collapse;
+      border: 1px solid black;
+    }
 
-	table th {
-		background-color: #2E2B33;
-		border: 3px solid #2E2B33;
-		padding:5px 10px;
-	}
+    table th {
+      background-color: #2e2b33;
+      border: 3px solid #2e2b33;
+      padding: 5px 10px;
+    }
 
-	table img {
-		transition: 0.3s;
-	}
+    table img {
+      transition: 0.3s;
+    }
 
-	main table td {
-		border: 3px solid #2E2B33;
-		padding: 30px 20px;
+    main table td {
+      border: 3px solid #2e2b33;
+      padding: 30px 20px;
+    }
 
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
 
-	}
+      background-color: rgba(0, 0, 0, 0.6);
+      border: 2px solid yellow;
+      border-radius: 10px;
+      padding: 15px;
 
-	ul {
-		display: flex;
-		flex-direction: column;
-		gap: 10px;
+      text-align: center;
 
-		background-color: rgba( 0, 0, 0, 0.6);
-		border: 2px solid yellow;
-		border-radius: 10px;
-		padding: 15px;
-		
-		text-align: center;
+      margin-right: 30px;
+    }
 
-		margin-right: 30px;
-	}
+    ul p {
+      font-weight: 700;
+      font-size: 20px;
+      color: yellow;
+    }
 
-	ul p {
-		font-weight: 700;
-		font-size: 20px;
-		color: yellow;
+    ul li {
+      transition: 0.3s;
+    }
 
-	}
+    a {
+      color: black;
+    }
 
-	ul li {
-		transition: 0.3s;
-	}
-	
-	a {
-		color: black;
-	}
-	
-	table img:hover{
-		filter: brightness(115%);
-	}
+    table img:hover {
+      filter: brightness(115%);
+    }
 
-	li:hover {
-		color: yellow;
-		filter: opacity(0.8);
-	}
+    li:hover {
+      color: yellow;
+      filter: opacity(0.8);
+    }
+  </style>
 
+  <body>
+    <header>
+      <table class="title">
+        <tr>
+          <td>
+            <img src="./imagens/projeto.png" width="200px" />
+          </td>
+          <td>
+            <h1>Projetos</h1>
+          </td>
+        </tr>
+      </table>
+      <div>
+        <div class="menu">
+          <tr>
+            <a href="./index.html">Home</a>
+            <a href="sobre.html">Sobre mim</a>
+            <a href="projetos.html">Projetos</a>
+            <a class="tira" href="contato.html">Contato</a>
+          </tr>
+        </div>
+      </div>
+    </header>
+    <section>
+      <main>
+        <div>
+          <table>
+            <thead>
+              <tr align="center">
+                <th>Data</th>
+                <th>Título</th>
+                <th>Link</th>
+              </tr>
+            </thead>
+            <tbody align="center">
+              <tr>
+                <td>01/01/2023</td>
+                <td>Projeto 1 - Insira o nome do projeto aqui.</td>
+                <td align="center">
+                  <a href="">
+                    <img
+                      align="center"
+                      alt="Ler Artigo"
+                      src="https://img.shields.io/badge/Ver%20Projeto-30A3DC?style=for-the-badge"
+                    />
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td width="100px">01/01/2023</td>
+                <td>Projeto 2 - Insira o nome do projeto aqui.</td>
+                <td align="center">
+                  <a href="">
+                    <img
+                      align="center"
+                      alt="Ler Artigo"
+                      src="https://img.shields.io/badge/Ver%20Projeto-E94D5F?style=for-the-badge"
+                    />
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>01/01/2023</td>
+                <td>Projeto 3 - Insira o nome do projeto aqui.</td>
+                <td align="center">
+                  <a href="">
+                    <img
+                      align="center"
+                      alt="Ler Artigo"
+                      src="https://img.shields.io/badge/Ver%20Projeto-30A3DC?style=for-the-badge"
+                    />
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>01/01/2023</td>
+                <td>Projeto 4 - Insira o nome do projeto aqui.</td>
+                <td align="center">
+                  <a href="">
+                    <img
+                      align="center"
+                      alt="Ler Artigo"
+                      src="https://img.shields.io/badge/Ver%20Projeto-E94D5F?style=for-the-badge"
+                    />
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>01/01/2023</td>
+                <td>Projeto 5 - Insira o nome do projeto aqui.</td>
+                <td align="center">
+                  <a href="">
+                    <img
+                      align="center"
+                      alt="Ler Artigo"
+                      src="https://img.shields.io/badge/Ver%20Projeto-30A3DC?style=for-the-badge"
+                    />
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>01/01/2023</td>
+                <td>Projeto 6 - Insira o nome do projeto aqui.</td>
+                <td align="center">
+                  <a href="">
+                    <img
+                      align="center"
+                      alt="Ler Artigo"
+                      src="https://img.shields.io/badge/Ver%20Projeto-E94D5F?style=for-the-badge"
+                    />
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+            <tfoot></tfoot>
+          </table>
+        </div>
+      </main>
 
-	</style>
-	
-<body>
-	<header>
-		<table class="title">
-			<tr>
-				<td>
-					<img src="./imagens/projeto.png" width="200px" />
-				</td>
-				<td>
-					<h1>
-						Projetos
-					</h1>
-				</td>
-			</tr>
-		</table>
-		<div>
-			<div class="menu">
-				<tr>
-					<a href="./index.html">Home</a>
-					<a href="sobre.html">Sobre mim</a>
-					<a href="projetos.html">Projetos</a>
-					<a class="tira" href="contato.html">Contato</a>
-				</tr>
-			</div>
-		</div>
-	</header>
-	<section>
-	<main>
-		<div>
-	<table>
-		<thead>
-			<tr align="center">
-				<th>Data</th>
-				<th>Título</th>
-				<th>Link</th>
-			</tr>
-		</thead>
-		<tbody align="center">
-			<tr>
-				<td>01/01/2023</td>
-				<td>Projeto 1 - Insira o nome do projeto aqui.</td>
-				<td align="center">
-					<a href="">
-						 <img align="center" alt="Ler Artigo" src="https://img.shields.io/badge/Ver%20Projeto-30A3DC?style=for-the-badge">
-					</a>
-				</td>
-			</tr>
-			<tr>
-				<td width="100px" >01/01/2023</td>
-				<td>Projeto 2 - Insira o nome do projeto aqui.</td>
-				<td align="center">
-					<a href="">
-						 <img align="center" alt="Ler Artigo" src="https://img.shields.io/badge/Ver%20Projeto-E94D5F?style=for-the-badge">
-					</a>
-				</td>
-			</tr>
-			<tr>
-				<td>01/01/2023</td>
-				<td>Projeto 3 - Insira o nome do projeto aqui.</td>
-				<td align="center">
-					<a href="">
-						 <img align="center" alt="Ler Artigo" src="https://img.shields.io/badge/Ver%20Projeto-30A3DC?style=for-the-badge">
-					</a>
-				</td>    
-			</tr>
-			<tr>
-				<td>01/01/2023</td>
-				<td>Projeto 4 - Insira o nome do projeto aqui.</td>
-				<td align="center">
-					<a href="">
-						 <img align="center" alt="Ler Artigo" src="https://img.shields.io/badge/Ver%20Projeto-E94D5F?style=for-the-badge">
-					</a>
-				</td>    
-			</tr>
-			<tr>
-				<td>01/01/2023</td>
-				<td>Projeto 5 - Insira o nome do projeto aqui.</td>
-				<td align="center">
-					<a href="">
-						 <img align="center" alt="Ler Artigo" src="https://img.shields.io/badge/Ver%20Projeto-30A3DC?style=for-the-badge">
-					</a>
-				</td>    
-			</tr>
-			<tr>
-				<td>01/01/2023</td>
-				<td>Projeto 6 - Insira o nome do projeto aqui.</td>
-				<td align="center">
-					<a href="">
-						 <img align="center" alt="Ler Artigo" src="https://img.shields.io/badge/Ver%20Projeto-E94D5F?style=for-the-badge">
-					</a>
-				</td>    
-			</tr>
-		</tbody>
-		<tfoot></tfoot>
-	</table>
-</div>
-</main>
+      <aside>
+        <ul>
+          <p>Minha turma:</p>
+          <a href="https://github.com/AdrianaOliveira2023" target="_blank"
+            ><li>Adriana Ribeiro</li></a
+          >
+          <a href="https://github.com/alexbelem" target="_blank"
+            ><li>Alexandre Belem</li></a
+          >
+          <a href="https://github.com/amandavvp" target="_blank"
+            ><li>Amanda da Veiga</li></a
+          >
+          <a href="https://github.com/BrendaNassot" target="_blank"
+            ><li>Brenda da Silva</li></a
+          >
+          <a href="https://github.com/ESTUDOcNs" target="_blank"
+            ><li>Carla Novaes</li></a
+          >
+          <a href="https://github.com/ESADDUM" target="_blank"
+            ><li>Eduardo Stephan</li></a
+          >
+          <a href="https://github.com/gabrielbraga98" target="_blank"
+            ><li>Gabriel da Silva</li></a
+          >
+          <a href="https://github.com/luissouzas" target="_blank"
+            ><li>José Luís</li></a
+          >
+          <a href="https://github.com/julianecalegario" target="_blank"
+            ><li>Juliane Jacqueline</li></a
+          >
+          <a href="https://github.com/leoggusmao" target="_blank"
+            ><li>Leonardo Gironde</li></a
+          >
+          <a href="https://github.com/LuanaMattos" target="_blank"
+            ><li>Luana Souza</li></a
+          >
+          <a href="" target="_blank"><li>Luiz Gustavo</li></a>
+          <a href="https://github.com/mvrcos-santos" target="_blank"
+            ><li>Marcos Adriano</li></a
+          >
+          <a href="" target="_blank"><li>Marllus Henrique</li></a>
+          <a href="https://github.com/MATHEUSPERENCIOLO" target="_blank"
+            ><li>Matheus Pereira</li></a
+          >
+          <a href="https://github.com/ThallesAlexandrevieira" target="_blank"
+            ><li>Thalles Alexandre</li></a
+          >
+          <a href="" target="_blank"><li>Vinicius Silva</li></a>
+          <a href="https://github.com/Wandersondantaas" target="_blank"
+            ><li>Wanderson Lucio</li></a
+          >
+          <a href="" target="_blank"><li>Waldson Geverson</li></a>
+          <a href="https://github.com/wesley-sorrentino" target="_blank"
+            ><li>Wesley de Oliveira</li></a
+          >
+          <a href="https://github.com/yuricgdasilva" target="_blank"
+            ><li>Yuri da Silva Carneiro</li></a
+          >
+          <a href="https://github.com/Yurisp23" target="_blank"
+            ><li>Yuri Silva Pinheiro</li></a
+          >
+        </ul>
+      </aside>
+    </section>
 
-<aside>
-	<ul>
-		<p>Minha turma:</p>
-		<a href="" target="_blank"><li>Adriana Ribeiro</li></a>
-		<a href="" target="_blank"><li>Alexandre Belem</li></a>
-		<a href="" target="_blank"><li>Amanda da Veiga</li></a>
-		<a href="" target="_blank"><li>Brenda da Silva</li></a>
-		<a href="" target="_blank"><li>Carla Novaes</li></a>
-		<a href="" target="_blank"><li>Eduardo Stephan</li></a>
-		<a href="" target="_blank"><li>Gabriel da Silva</li></a>
-		<a href="" target="_blank"><li>José Luís</li></a>
-		<a href="" target="_blank"><li>Juliane Jacqueline</li></a>
-		<a href="" target="_blank"><li>Leonardo Gironde</li></a>
-		<a href="" target="_blank"><li>Luana Souza</li></a>
-		<a href="" target="_blank"><li>Luiz Gustavo</li></a>
-		<a href="" target="_blank"><li>Marcos Adriano</li></a>
-		<a href="" target="_blank"><li>Marllus Henrique</li></a>
-		<a href="" target="_blank"><li>Matheus Pereira</li></a>
-		<a href="" target="_blank"><li>Thalles Alexandre</li></a>
-		<a href="" target="_blank"><li>Vinicius Silva</li></a>
-		<a href="" target="_blank"><li>Waldson Geverson</li></a>
-		<a href="" target="_blank"><li>Wesley de Oliveira</li></a>
-		<a href="" target="_blank"><li>Yuri da Silva Carneiro</li></a>
-		<a href="" target="_blank"><li>Yuri Silva Pinheiro</li></a>
-	</ul>
-</aside>
-</section>
-
-<footer>
-	<table>
-		<tr>
-			<td class="rodape">
-				Desenvolvido por Ricardo Gonçalves no Curso de Programador
-				Front-End com o <a href="https://sammyfreitas.github.io/portfolioSite/" target="_blank"><span>Prof. Anthony Freitas</span></a
-				>.
-			</td>
-		</tr>
-		<tr>
-			<td align="center">
-				Todos os direitos reservados - Senai Maracanã - 2023©
-			</td>
-		</tr>
-	</table>
-</footer>
-</body>
-
+    <footer>
+      <table>
+        <tr>
+          <td class="rodape">
+            Desenvolvido por Ricardo Gonçalves no Curso de Programador Front-End
+            com o
+            <a
+              href="https://sammyfreitas.github.io/portfolioSite/"
+              target="_blank"
+              ><span>Prof. Anthony Freitas</span></a
+            >.
+          </td>
+        </tr>
+        <tr>
+          <td align="center">
+            Todos os direitos reservados - Senai Maracanã - 2023©
+          </td>
+        </tr>
+      </table>
+    </footer>
+  </body>
 </html>
