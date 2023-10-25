@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Contato</title>
-	<link rel="preconnect" href="https://fonts.googleapis.com" />
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link
-		href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-		rel="stylesheet"
-	/>
-</head>
-<style>
-  /* ======= Fixed style ======= */
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato</title>
+    <link rel="icon" href="./imagens/contato.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    /* ======= Fixed style ======= */
     /* ======= Header ======= */
     * {
       box-sizing: border-box;
@@ -33,7 +34,7 @@
     }
 
     header div {
-      background-color: #2E2B33;
+      background-color: #2e2b33;
       display: flex;
     }
 
@@ -68,10 +69,10 @@
       padding: 5px;
     }
 
-		/* ======= Main ======= */
-		body {
-			background-color: #5c21db;
-		}
+    /* ======= Main ======= */
+    body {
+      background-color: #5c21db;
+    }
 
     /* ======= Footer ======= */
     footer {
@@ -88,13 +89,13 @@
     }
 
     .rodape {
-      border-top: 1px solid ;
+      border-top: 1px solid;
       padding-top: 5px;
     }
 
-	    /* ======= Animations ======= */
+    /* ======= Animations ======= */
 
-		header a:hover {
+    header a:hover {
       text-decoration: underline;
     }
 
@@ -105,141 +106,173 @@
       transition: 0.3s;
     }
 
+    /* ======= Normal style ======= */
 
-	
-	  /* ======= Normal style ======= */
+    section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
 
-		section {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-
-			margin-top: 50px;
-			gap: 20px;
-		}
-
-		.content {
-			display: flex;
-			flex-direction: column;
-			background-color: #2A2634;
-     		border-radius: 5px;
-
-    	    padding: 10px 100px 30px 100px;
-		}
-
-		h2 {
-			margin-bottom: 30px;
-		}
-
-		table td img {
-			width: 200px;
-			border-radius: 100px;
-			transition: transform 0.3s;
-		}
-
-		section td {
-			padding: 5px;
-		}
-	
-	div {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-	}
-
-	p {
-		margin-left: 30px;
-		font-size: 18px;
-	}
-
-	ul {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		gap: 10px;
-
-		margin-right: 20px;
-	}
-
-	a {
-		color: black;
-	}
-
-	/* ======= Animations ======= */ 
-
-	section td img:hover {
-  transform: scale(1.1);  
+      margin-top: 50px;
+      gap: 20px;
     }
 
-</style>
-<body>
-	<header>
-		<table class="title">
-			<tr>
-				<td>
-					<img src="./imagens/contato.png" width="200px" />
-				</td>
-				<td>
-					<h1>
-						Contatos
-					</h1>
-				</td>
-			</tr>
-		</table>
-		<div>
-			<div class="menu">
-				<tr>
-					<a href="./index.html">Home</a>
-					<a href="sobre.html">Sobre mim</a>
-					<a href="projetos.html">Projetos</a>
-					<a class="tira" href="contato.html">Contato</a>
-				</tr>
-			</div>
-		</div>
-	</header>
-	<main>
-		<section>
-			<div class="content">
-			<h2>Entre em contato comigo!</h2>
-			<div>
-			<table>
-				<tr>
-					<td><a href="https://www.linkedin.com/in/ricardo-gon/" target="_blank"><img src="./imagens/social/linkedin.png" alt="Imagem linkedin"></a></td>
-					<td><a href="https://github.com/DevRicart" target="_blank"><img src="./imagens/social/github.png" alt="imagem github"></a></td>
+    .content {
+      display: flex;
+      flex-direction: column;
+      background-color: #2a2634;
+      border-radius: 5px;
 
-				</tr>
-				<tr>
-					<td><a href="https://www.instagram.com/devricart/" target="_blank"><img src="./imagens/social/insta.png" alt="Imagem instagram"></a></td>
-					<td><a href="https://wa.me/+5521971860936" target="_blank"><img src="./imagens/social/zap.png" alt="Imagem whatsapp"></a></td>
+      padding: 10px 100px 30px 100px;
+    }
 
-				</tr>
-				<tr>
-					<td><a href="mailto:ricardo.gferreira97@hotmail.com" target="_blank"><img src="./imagens/social/mail.png" alt="imagem e-mail"></a></td>
-					<td><a href="https://www.facebook.com/ricardo.goncalves.796?mibextid=ZbWKwL" target="_blank"><img src="./imagens/social/face.png" alt="imagem facebook"></a></td>
-					<td><a href=""><img src="./imagens/social" alt=""></a></td>
-				</tr>
-			</table>
-			</div>
-			</div>
-		</section>
+    h2 {
+      margin-bottom: 30px;
+    }
 
-	</main>
+    table td img {
+      width: 200px;
+      border-radius: 100px;
+      transition: transform 0.3s;
+    }
 
-		<footer>
-			<table>
-				<tr>
-					<td class="rodape">
-						Desenvolvido por Ricardo Gonçalves no Curso de Programador
-						Front-End com o <a href="https://sammyfreitas.github.io/portfolioSite/" target="_blank"><span>Prof. Anthony Freitas</span></a
-						>.
-					</td>
-				</tr>
-				<tr>
-					<td align="center">
-						Todos os direitos reservados - Senai Maracanã - 2023©
-					</td>
-				</tr>
-			</table>
-		</footer>
-</body>
+    section td {
+      padding: 5px;
+    }
+
+    div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    p {
+      margin-left: 30px;
+      font-size: 18px;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+
+      margin-right: 20px;
+    }
+
+    a {
+      color: black;
+    }
+
+    /* ======= Animations ======= */
+
+    section td img:hover {
+      transform: scale(1.1);
+    }
+  </style>
+  <body>
+    <header>
+      <table class="title">
+        <tr>
+          <td>
+            <img src="./imagens/contato.png" width="200px" />
+          </td>
+          <td>
+            <h1>Contatos</h1>
+          </td>
+        </tr>
+      </table>
+      <div>
+        <div class="menu">
+          <tr>
+            <a href="./index.html">Home</a>
+            <a href="sobre.html">Sobre mim</a>
+            <a href="projetos.html">Projetos</a>
+            <a class="tira" href="contato.html">Contato</a>
+          </tr>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section>
+        <div class="content">
+          <h2>Entre em contato comigo!</h2>
+          <div>
+            <table>
+              <tr>
+                <td>
+                  <a
+                    href="https://www.linkedin.com/in/ricardo-gon/"
+                    target="_blank"
+                    ><img
+                      src="./imagens/social/linkedin.png"
+                      alt="Imagem linkedin"
+                  /></a>
+                </td>
+                <td>
+                  <a href="https://github.com/DevRicart" target="_blank"
+                    ><img src="./imagens/social/github.png" alt="imagem github"
+                  /></a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="https://www.instagram.com/devricart/" target="_blank"
+                    ><img
+                      src="./imagens/social/insta.png"
+                      alt="Imagem instagram"
+                  /></a>
+                </td>
+                <td>
+                  <a href="https://wa.me/+5521971860936" target="_blank"
+                    ><img src="./imagens/social/zap.png" alt="Imagem whatsapp"
+                  /></a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    href="mailto:ricardo.gferreira97@hotmail.com"
+                    target="_blank"
+                    ><img src="./imagens/social/mail.png" alt="imagem e-mail"
+                  /></a>
+                </td>
+                <td>
+                  <a
+                    href="https://www.facebook.com/ricardo.goncalves.796?mibextid=ZbWKwL"
+                    target="_blank"
+                    ><img src="./imagens/social/face.png" alt="imagem facebook"
+                  /></a>
+                </td>
+                <td>
+                  <a href=""><img src="./imagens/social" alt="" /></a>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <table>
+        <tr>
+          <td class="rodape">
+            Desenvolvido por Ricardo Gonçalves no Curso de Programador Front-End
+            com o
+            <a
+              href="https://sammyfreitas.github.io/portfolioSite/"
+              target="_blank"
+              ><span>Prof. Anthony Freitas</span></a
+            >.
+          </td>
+        </tr>
+        <tr>
+          <td align="center">
+            Todos os direitos reservados - Senai Maracanã - 2023©
+          </td>
+        </tr>
+      </table>
+    </footer>
+  </body>
 </html>
